@@ -1,0 +1,67 @@
+body{
+  height:95vh;
+  width:100%;
+  background-color:rgb(36, 36, 36);
+  font-family: 'Titillium Web', sans-serif;
+  color:rgb(255, 255, 255);
+  font-weight:600;
+  overflow: hidden;
+}
+
+h1{
+  text-align: center;
+ 
+}
+
+.container{
+  height:100%;
+  width:100%;
+}
+
+
+.message__box{
+  display:flex;
+  flex-direction: column;
+  padding-top:35vh;
+  
+}
+
+.button__container{
+  padding-top: 5vh;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button{
+  border:none;
+  height:50px;
+  width:120px;
+  background-color: rgba(0, 0, 0, 0.295);
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 900;
+}
+
+button:hover{
+  background-color:rgb(255, 66, 66);
+  color:black;
+  border-radius: 30px;
+  transition:all 0.45s ease-in
+}
+
+@media only screen and (max-width:530px){
+  h1{
+    font-size: 20px;
+    transition: all 0.2s ease-out;
+  }
+}
+@media only screen and (max-height:500px){
+  .button__container{
+    padding-top: 2vh;
+  }
+  .message__box{
+    padding-top: 15vh;
+    
+  }
+}

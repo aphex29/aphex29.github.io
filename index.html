@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700;900&display=swap" rel="stylesheet">
+    <title>Patrick Markowski | SWE</title>
+</head>
+<body>
+    <div class="container">
+
+        <section id="hero">
+            <div class="title-card">
+                <div class="text__block">
+                    <h1 class="intro-text">
+                        Hi <span class="wave">👋🏻</span>, I'm <span style="color:rgb(255, 66, 66)">Patrick</span>
+                    </h1>
+                    <p class="char-txt" id="loop-wrd">
+                        Software Engineer
+                    </p>
+                </div>
+                <div class="scroll__button">
+                    <a href="#about"><button>&#10507;</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Script for looping title card-->
+        <script>
+            var wrds = ['Passionate Programmer','Continuous Learner', 'Team Player', 'Software Engineer'];
+            var doc = document.getElementById('loop-wrd');
+            var i = 0;
+    
+            function updateWrds(){
+                if (i==4) i=0;
+                doc.innerHTML = wrds[i];
+                i++;
+            }
+            setInterval(updateWrds,1300);
+        </script>
+        <!--End of Script-->
+
+
+        <div class="nav-container">
+            <nav class="top-nav">
+                <header class="nav-text">
+                    <a href="#hero">Home</a>           
+                    <a href="#about">About</a>           
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>    
+                </header>
+            </nav>
+        </div>
+
+        <section id="about">
+            <h1 class="title">About</h1>
+            <div class="float-container"> 
+                <div class="float-child about-par">
+                    <h1 class="sum-text">As a software engineer, I embrace lifelong learning, constantly seeking opportunities to expand my knowledge. 
+                        With a huge passion for problem solving and my wide knowledge of tools and programming languages, 
+                        I enjoy applying my skills to tackle complex challenges and develop innovative solutions
+                        that make a positive impact in various domains and industries. When I am not on the computer, I am either at 
+                        the gym or exploring new places to eat or hike.
+                    </h1>
+                </div>            
+                <div class="float-child gallery">                   
+                    <div class="col_1" id="col">
+                        <div><img src="./img/1.png">    <p>C</p></div>
+                        <div><img src="./img/4.png">    <p>HTML</p></div>                                 
+                        <div><img src="./img/3.png">    <p>Flask</p></div>                   
+                        <div><img src="./img/11.png">   <p>Scala</p></div>             
+                    </div>
+                    <div class="col_2" id="col">
+                        <div><img src="./img/5.png">    <p>Java</p></div>                   
+                        <div><img src="./img/6.png">    <p>JavaScript</p></div>
+                        <div><img src="./img/7.png">    <p>MongoDB</p></div>
+                        <div><img src="./img/8.png">    <p>MySQL</p></div>
+                        <div><img src="./img/10.png">   <p>React</p></div>
+                    </div>
+                    <div class="col_3" id="col">
+                        <div><img src="./img/9.png">    <p>Python</p></div>
+                        <div><img src="./img/2.png">    <p>CSS</p></div>                
+                        <div><img src="./img/12.png">   <p>Spring Boot</p></div>
+                        <div><img src="./img/13.png">   <p>Tailwind</p></div>
+                    </div>
+                </div>
+            </div>            
+        </section>
+
+    
+        <section id="projects">
+            <h1 class="title">Projects</h1>
+            <div id="proj-img">
+
+                <div class="right project__description">
+                    <div class="description__block">
+                        <h1>SeshEDU</h1>
+                        <p>Fullstack social media application built with React, Node.js, MySQL, and Java.
+                        </p>
+                        <div class="button__container">
+                            <a href="https://github.com/aphex29/SeshEDU" target="_blank"><button class="proj__button github">Github</button></a>
+                            <a href="https://drive.google.com/file/d/1RI2WcDmOfedsohvrMRIyGquwegStsoxX/view" target="_blank"><button class="proj__button learn__more">Learn more</button></a>
+                        </div>
+                    </div>
+                    <div class="img__container"><img class="img1" src="./img/proj1.png"></div>                   
+                </div>
+
+
+                <div class="left project__description">
+                    <img class="img2" src="./img/proj2.png">
+                    <div class="description__block">
+                        <h1>Placeholder Title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Fusce ac mi sodales, tristique orci eu, tempus felis. 
+                            Vestibulum ante ipsum primis in faucibus orci luctus et 
+                            ultrices posuere cubilia curae; Aenean vitae orci ac neque 
+                            porttitor imperdiet. Curabitur convallis sollicitudin lacus,                           
+                        </p>
+                        <div class="button__container">
+                            <a href="#hero"><button class="proj__button github">Github</button></a>
+                            <a href="#hero"><button class="proj__button learn__more">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="right project__description">
+                    <div class="description__block">
+                        <h1>Placeholder title</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Fusce ac mi sodales, tristique orci eu, tempus felis. 
+                            Vestibulum ante ipsum primis in faucibus orci luctus et 
+                            ultrices posuere cubilia curae; Aenean vitae orci ac neque 
+                            porttitor imperdiet. Curabitur convallis sollicitudin lacus, 
+                            id rutrum augue imperdiet vitae. Sed pulvinar tellus nibh, 
+                            nec viverra libero ultrices ut. Nulla mollis feugiat lectus.                          
+                        </p>
+                        <div class="button__container">
+                            <a href="#hero"><button class="proj__button github">Github</button></a>
+                            <a href="#hero"><button class="proj__button learn__more">Learn more</button></a>
+                        </div>
+                    </div>
+                    <img class="img3" src="./img/proj3.png">
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="title">Contact</h1>
+            <div class="form__container">
+                <form class="myform">
+                    <input type="text" class="fname text__box" name="fname" placeholder="First Name" required>
+                    <input type="text" class="lname text__box" name="lname" placeholder="Last Name" required>
+                    <input type="email" class="email text__box" name="email" placeholder="Email" required>
+                    <textarea class="message text__box text__box__large" name="message" placeholder="Message" required></textarea>
+                    <input type="submit" class="text__submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer__container">
+            <div class="footer__button">
+                <a href="#hero"><button>&uArr;</button></a>
+                
+            </div>
+            <div class="footer__background">
+                <div class="social__links">
+                    <a href="https://github.com/aphex29" target="_blank"><img class="img17" src="./img/github.png"></a>
+                    <a href="https://www.linkedin.com/in/patrick-markowski-6973a8230/" target="_blank"><img class="img18" src="./img/linkedin.png"></a>
+                    <a href="mailto:markowski.patrick@gmail.com" style="text-align: center; color:white">&#9993;</a>  
+                </div>
+                <div class="copyright">
+                    <p>Patrick Markowski <span>&copy;</span></p>
+                </div>
+            </div>
+            
+            
+        </footer>
+
+    </div>
+    <script src="./js/script.js"></script>
+   
+</body>
+</html>
