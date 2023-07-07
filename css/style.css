@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
 html{
   scroll-behavior: smooth;
   height:100%;
@@ -11,7 +20,7 @@ body{
   font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
   font-size:40px;
-  
+  position: relative
 }
 
 .title{
@@ -608,8 +617,6 @@ input[type=text] {
   .float-container{
     flex-direction: column;
     align-items: center;
-    
-    
   } 
   .about-par{
     
@@ -686,6 +693,33 @@ input[type=text] {
   .gallery{
     margin-left:17px;
   }
+}
+
+@media only screen and (max-width:420px){
+  #col div{
+    width:115px;
+    height:75px;
+    transition: width 0.5s linear, height 0.5s linear;
+  }
+  #col img{
+    width: 35px;
+    height:25px;
+    transition: width 0.5s linear, height 0.5s linear;
+  }
+  #col p{
+    font-size:14px;
+    margin-top:51px;
+    
+  }
+
+  .sum-text{
+    padding-top:20px;
+  }
+
+  #about>h1{
+    font-size:40px;
+  }
+  
 }
 
 /* END */
