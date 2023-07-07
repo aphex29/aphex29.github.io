@@ -9,7 +9,6 @@ html, body {
 }
 
 html{
-  
   height:100%;
 }
 
@@ -96,7 +95,7 @@ body{
   width:100%;
   height: 100%;
   height: 55px;
-  margin-top:30px;
+  margin-top:3vh;
   background-color: rgb(26, 26, 26);
   opacity:0.97;
   
@@ -111,7 +110,7 @@ body{
 
 .nav-container{
   position:sticky;
-  top:-2px;
+  top:0px;
   box-shadow:0 4px rgb(20, 20, 20);
   z-index: 99;
 }
@@ -159,7 +158,7 @@ body{
   display: block; 
   content: " "; 
   margin-top: -10px; 
-  height: 10px; 
+  height: 70px; 
   visibility: hidden; 
   pointer-events: none;
 }
@@ -255,7 +254,7 @@ body{
   display: block; 
   content: " "; 
   margin-top: -10px; 
-  height: 10px; 
+  height: 70px; 
   visibility: hidden; 
   pointer-events: none;
 }
