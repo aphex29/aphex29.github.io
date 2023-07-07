@@ -151,7 +151,7 @@ body{
 .about-par{
   padding-top:20px;
   width:100%;
-  
+  max-width:600px;
 }
 .about-par>p{
   padding:20px 15px;
@@ -639,8 +639,7 @@ input[type=text] {
     
   } 
   .about-par{
-    
-    max-width:100%;
+    max-width:none;
   }
   .sum-text{
     text-align: center;
