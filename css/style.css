@@ -9,10 +9,9 @@ body{
   background-color:rgb(36, 36, 36);
   color:white;
   font-family: 'Titillium Web', sans-serif;
-  font-size:40px;
-}
-html,body{
   overflow-x: hidden;
+  font-size:40px;
+  
 }
 
 .title{
@@ -102,7 +101,7 @@ html,body{
 
 .nav-container{
   position:sticky;
-  top:0px;
+  top:-2px;
   box-shadow:0 4px rgb(20, 20, 20);
   z-index: 99;
 }
