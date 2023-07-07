@@ -133,7 +133,7 @@ body{
 /* Summary Paragraph */
 
 .float-container{
-  display:flex;
+ 
   width:100%;
   align-items: center;
   justify-content: center;
@@ -151,7 +151,11 @@ body{
 .about-par{
   padding-top:20px;
   width:100%;
-  max-width:600px;
+  
+}
+.about-par>p{
+  padding:20px 15px;
+  margin:0;
 }
 
 #about::before { 
@@ -202,7 +206,7 @@ body{
 }
  
 .col_1, .col_3{
- margin-top:80px;
+ margin-top:50px;
 }
 .col_1{
   margin-right:20px;
