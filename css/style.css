@@ -9,9 +9,10 @@ body{
   background-color:rgb(36, 36, 36);
   color:white;
   font-family: 'Titillium Web', sans-serif;
-  overflow-x: hidden;
   font-size:40px;
-  
+}
+html,body{
+  overflow-x: hidden;
 }
 
 .title{
