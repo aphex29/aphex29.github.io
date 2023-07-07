@@ -19,7 +19,7 @@ form.addEventListener("submit",function(e){
 
 
 function sendEmail(userName,userEmail,userMessage){
-  let URL = 'http://127.0.0.1:3000/thankyou.html'
+  let URL = 'aphex29.github.io/thankyou.html'
   window.location.href = URL;
   window.location.replace(URL);
   fetch("https://formsubmit.co/ajax/markowski.patrick@gmail.com",{
