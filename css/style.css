@@ -640,17 +640,17 @@ input[type=text] {
   } 
   .about-par{
     max-width:none;
+    padding-left:20px;
   }
   .sum-text{
     text-align: center;
-    padding-right:60px;
+    
     font-size:30px;
   }
 }
 @media only screen and (max-width:1000px){
   
-  .sum-text{
-    
+  .sum-text{ 
     font-size:18px;   
   }
   .float-container{
@@ -665,6 +665,7 @@ input[type=text] {
  
   .sum-text{
     font-size:20px;
+    
   }
   #col div{
     width:125px;
@@ -732,7 +733,7 @@ input[type=text] {
 @media only screen and (max-width:400px){
   
   #col div{
-    width:105px;
+    width:90px;
     height:65px;
     
   }
@@ -894,6 +895,11 @@ input[type=text] {
 @media only screen and (max-width:390px){
   .form__container{
     width:360px;
+  }
+}
+@media only screen and (max-width:370px){
+  .form__container{
+    width:330px;
   }
 }
 /* END */
