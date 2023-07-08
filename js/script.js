@@ -12,15 +12,11 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  setTimeout(function(){document.location.href = "./thankyou.html"},100);
-  
+  setTimeout(function(){document.location.href = "./thankyou.html"},400);
 });
 
 
 function sendEmail(userFullName,userEmail,userMessage){
-
-  
-
   fetch("https://formsubmit.co/ajax/markowski.patrick@gmail.com",{
     method:"POST",
     headers:{
@@ -32,12 +28,9 @@ function sendEmail(userFullName,userEmail,userMessage){
       'email':userEmail,
       'message':userMessage
     })
-
   })
     .then(response=>response.json())
     .then(data => console.log(data))
     .catch(error=>console.log(error));
-    
-    
 }
 
