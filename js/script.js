@@ -1,7 +1,5 @@
 let form = document.querySelector(".myform");
 form.addEventListener("submit",function(e){
-  
-
   let formdata = new FormData(this);
 
   let fName = formdata.get("fname");
@@ -12,7 +10,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  setTimeout(function(){document.location.href = "./thankyou.html"},400);
+  setTimeout(function(){document.location.href = "./thankyou.html"},900);
 });
 
 
