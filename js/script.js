@@ -1,6 +1,3 @@
-
-
-
 let form = document.querySelector(".myform");
 form.addEventListener("submit",function(e){
   e.preventDefault();
@@ -13,7 +10,7 @@ form.addEventListener("submit",function(e){
   let message = formdata.get('message');
 
   let name = fName +" "+ lName;
-  
+
   sendEmail(name,email,message);
   let URL = "https://aphex29.github.io/thankyou.html"
   window.location.href = URL;
@@ -21,19 +18,19 @@ form.addEventListener("submit",function(e){
 });
 
 
-function sendEmail(userName,userEmail,userMessage){
+function sendEmail(userFullName,userEmail,userMessage){
   fetch("https://formsubmit.co/ajax/markowski.patrick@gmail.com",{
     method:"POST",
     headers:{
       'Content-Type': 'application/json',
       'Accept': 'application/json'
     },
-
     body:JSON.stringify({
-      'name': userName,
+      'name': userFullName,
       'email':userEmail,
       'message':userMessage
     })
+
   })
     .then(response=>response.json())
     .then(data => console.log(data))
