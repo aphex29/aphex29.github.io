@@ -12,9 +12,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-
-  setInterval(sendUserOut,500);
-  
+  setInterval(sendUserOut,1000);
 });
 
 
