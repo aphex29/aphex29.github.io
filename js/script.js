@@ -10,7 +10,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  setTimeout(function(){document.location.href = "./thankyou.html"},900);
+  setTimeout(function(){document.location.href = "aphex29.github.io/thankyou.html"},900);
 });
 
 
