@@ -1,3 +1,6 @@
+
+
+
 let form = document.querySelector(".myform");
 form.addEventListener("submit",function(e){
   e.preventDefault();
@@ -35,5 +38,5 @@ function sendEmail(userFullName,userEmail,userMessage){
 }
 
 function sendUserOut(){
-  window.location.href = "aphex29.github.io/thankyou.html";
+  window.location("aphex29.github.io/thankyou.html");
 }
