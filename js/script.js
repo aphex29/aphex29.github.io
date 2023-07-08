@@ -11,7 +11,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  setTimeout(function(){window.location.href = "aphex29.github.io/thankyou.html"},900);
+  setTimeout(function(){document.location.href = "aphex29.github.io/thankyou.html"},400);
 });
 
 
