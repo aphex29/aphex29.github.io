@@ -1,5 +1,3 @@
-
-
 let form = document.querySelector(".myform");
 form.addEventListener("submit",function(e){
   e.preventDefault();
@@ -13,8 +11,9 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  // setTimeout(sendUserOut,400);
-});
+  
+//   setTimeout(sendUserOut,400);
+ });
 
 
 
@@ -33,9 +32,10 @@ function sendEmail(userFullName,userEmail,userMessage){
   })
     .then(response=>response.json())
     .then(data => console.log(data))
+    .then(alert("Message sent!"))
     .catch(error=>console.log(error));
 }
 
-function sendUserOut(){
-  window.location.href = "aphex29.github.io/thankyou.html";
-}
+// function sendUserOut(){
+//   window.location.href = "aphex29.github.io/thankyou.html";
+// }
