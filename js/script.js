@@ -1,5 +1,5 @@
 let form = document.querySelector(".text__submit");
-form.addEventListener("click",function(e){
+form.addEventListener("submit",function(e){
   e.preventDefault();
   let formdata = new FormData(this);
 
@@ -36,6 +36,4 @@ function sendEmail(userFullName,userEmail,userMessage){
 
 function sendUserOut(){
   window.location.href = "aphex29.github.io/thankyou.html";
-  return false;
-
 }
