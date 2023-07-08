@@ -15,12 +15,13 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
   
   sendEmail(name,email,message);
+  let URL = "https://aphex29.github.io/thankyou.html"
+  window.location.href = URL;
+  window.location.replace(URL);
 });
 
 
 function sendEmail(userName,userEmail,userMessage){
-  
-  
   fetch("https://formsubmit.co/ajax/markowski.patrick@gmail.com",{
     method:"POST",
     headers:{
@@ -37,8 +38,4 @@ function sendEmail(userName,userEmail,userMessage){
     .then(response=>response.json())
     .then(data => console.log(data))
     .catch(error=>console.log(error));
-    
-    let URL = "https://aphex29.github.io/thankyou.html"
-    window.location.href = URL;
-    window.location.replace(URL);
 }
