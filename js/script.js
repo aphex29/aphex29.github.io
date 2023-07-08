@@ -41,5 +41,6 @@ function sendEmail(userFullName,userEmail,userMessage){
 }
 
 function sendUserOut(){
-  window.location.replace("aphex29.github.io/thankyou.html");
+  window.location.href="aphex29.github.io/thankyou.html";
+  return false;
 }
