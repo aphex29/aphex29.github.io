@@ -12,7 +12,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-  
+  sendUserOut();
 });
 
 
@@ -37,7 +37,7 @@ function sendEmail(userFullName,userEmail,userMessage){
     .then(data => console.log(data))
     .catch(error=>console.log(error));
     
-    setInterval(sendUserOut,500);
+    
 }
 
 function sendUserOut(){
