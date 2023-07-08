@@ -12,8 +12,7 @@ form.addEventListener("submit",function(e){
   let name = fName +" "+ lName;
 
   sendEmail(name,email,message);
-
-  setInterval(sendUserOut,500);
+  setTimeout(function(){document.location.href = "./thankyou.html"},100);
   
 });
 
@@ -42,8 +41,3 @@ function sendEmail(userFullName,userEmail,userMessage){
     
 }
 
-function sendUserOut(){
-  window.location.href="aphex29.github.io/thankyou.html";
-  window.location.replace("aphex29.github.io/thankyou.html");
-  return false;
-}
