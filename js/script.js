@@ -1,6 +1,5 @@
 let form = document.querySelector(".myform");
 form.addEventListener("submit",function(e){
-  e.preventDefault();
   let formdata = new FormData(this);
 
   let fName = formdata.get("fname");
@@ -12,7 +11,7 @@ form.addEventListener("submit",function(e){
 
   sendEmail(name,email,message);
   
-//   setTimeout(sendUserOut,400);
+
  });
 
 
@@ -36,6 +35,3 @@ function sendEmail(userFullName,userEmail,userMessage){
     .catch(error=>console.log(error));
 }
 
-// function sendUserOut(){
-//   window.location.href = "aphex29.github.io/thankyou.html";
-// }
