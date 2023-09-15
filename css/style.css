@@ -276,8 +276,8 @@ body{
 }
 
 #proj-img img{
-  width:810px;
-  height:auto;
+  width:900px;
+  height:500px;
   border:50px solid rgba(255, 67, 67, 0.308);
   transition: 0.4s all ease-in-out;
 }
